@@ -1,0 +1,19 @@
+[
+  {
+    "enable": false,
+    "name": "fotomen",
+    "url": "https://fotomen.cn/feed/",
+    "parse": "rss",
+    "img": "data-src"
+  },{
+    "enable": false,
+    "name": "ifeve",
+    "url": "http://ifeve.com/feed/",
+    "parse": "rss"
+  },{
+  "enable": true,
+  "name": "importnew",
+  "url": "http://www.importnew.com/all-posts",
+  "parse": "html"
+}
+]
