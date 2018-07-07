@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 	"flag"
-	"github.com/rss_subscribe/scrapy"
 	"upper.io/db.v3"
+	"../scrapy"
 )
 
 var (

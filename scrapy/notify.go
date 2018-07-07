@@ -18,8 +18,13 @@ type Response struct{
 }
 
 func Notify(channel *Channel, storage db.Collection) error {
-	for i := 0; i < len(channel.Items) ; i = i + 5 {
-		slice := channel.Items[i:i+5]
+	size := len(channel.Items)
+	for i := 0; i < size ; i = i + 5 {
+		length := i + 5
+		if length > size {
+			length = size
+		}
+		slice := channel.Items[i:length]
 		title, notifyText := buildMarkDownText(channel, slice)
 
 		resp, err := sendHtmlNotify(title, notifyText)
